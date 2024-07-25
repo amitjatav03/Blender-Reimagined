@@ -157,6 +157,9 @@ let landingBg = document.querySelector(".ecosystem-section");
 let landingPage = document.querySelector(".landing-page");
 let ecoPage = document.querySelector(".ecosystem-section");
 let footer = document.querySelector(".main-footer");
+let allImages = document.querySelectorAll("img");
+
+
 
 window.addEventListener("mousemove", dets => {
     gsap.to(crsr, {
@@ -172,6 +175,18 @@ window.addEventListener("mousemove", dets => {
     })
 })
 
+
+allImages.forEach(img => {
+    img.addEventListener("mousemove", function(){
+        glowingCrsr.style.opacity = .2;
+    })
+    img.addEventListener("mouseout", function(){
+        glowingCrsr.style.opacity = .6;
+    })
+})
+
+
+
 landingPage.addEventListener("mousemove", function(){
     // glowingCrsr.style.opacity = 1;
     crsr.style.opacity = 1;
@@ -180,7 +195,7 @@ landingPage.addEventListener("mousemove", function(){
 landingPage.addEventListener("mouseout", function(){
     // glowingCrsr.style.opacity = 0;
     crsr.style.opacity = 0;
-    glowingCrsr.style.opacity = 1;
+    glowingCrsr.style.opacity = .6;
 })
 
 footer.addEventListener("mousemove", function(){
@@ -191,7 +206,7 @@ footer.addEventListener("mousemove", function(){
 footer.addEventListener("mouseout", function(){
     // glowingCrsr.style.opacity = 0;
     crsr.style.opacity = 0;
-    glowingCrsr.style.opacity = 1;
+    glowingCrsr.style.opacity = .6;
 })
 
 ecoPage.addEventListener("mousemove", function(){

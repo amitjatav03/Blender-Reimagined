@@ -19,7 +19,8 @@
 
 @font-face {
     font-family: matter;
-    src: url(fonts/Matter-Regular.woff);
+    /* src: url(fonts/Matter-Regular.woff); */
+    src: url(fonts/HK\ Guise\ Medium.otf);
 }
 
 
@@ -58,12 +59,13 @@ a{
 }
 
 .glowing-crsr{
-    background: #2d9a82bc;
-    border-radius: 50%;
+    /* background: #2d9a82bc; */
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     filter: blur(200px);
     pointer-events: none;
-    mix-blend-mode: difference;
-    opacity: 1;
+    mix-blend-mode:difference;
+    opacity: .6;
 }
 
 .lft-crsr-line{
@@ -175,7 +177,6 @@ a{
 
 .nav-circle:hover:after{
     top: 0;
-    cursor: pointer;
 }
 
 .btm-nav-btns{
@@ -192,7 +193,7 @@ a{
     height: 4rem; */
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: #dffd5f;
     /* top: 50%;
     left: 0%; */
     top: 100%;
@@ -200,7 +201,7 @@ a{
     transform: translate(-50%, -50%) scaleY(0);
     /* border-radius: 50%; */
     z-index: -1;
-    transition: all .7s ease;
+    transition: all .8s ease;
 }
 .btm-nav-btns:hover:after{
     transform: translate(-50%, -50%) scaleY(5);
@@ -314,6 +315,10 @@ a{
     margin-top: 10%;
 }
 
+.monkey{
+    object-position: bottom;
+}
+
 .card-details h3{
     text-align: center;
 }
@@ -367,8 +372,8 @@ a{
 }
 
 .stripe img{
-    width: 35vw;
-    height: 25vw;
+    width: 40vw;
+    height: 30vw;
     position: absolute;
     top: -600%;
     left: -15%;
@@ -401,21 +406,21 @@ a{
 
 .eyn-dets h1{
     font-size: 2.5rem;
-    line-height: 2.5rem;
+    line-height: 2.7rem;
     /* font-family: antique-olive; */
-    font-family: gilroy;
+    font-family: matter;
     font-weight: bold;
     margin-bottom: .5rem;
     letter-spacing: -1px;
 }
 
 .eyn-dets p{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-family: matter;
     /* font-family: gilroy; */
     /* color: rgba(0, 0, 0, 0.689); */
     color: rgba(255, 255, 255, 0.832);
-    line-height: 1.6rem;
+    line-height: 1.7rem;
 }
 
 .eyn-list{
@@ -478,7 +483,7 @@ a{
 
 .people h2{
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: matter;
     line-height: 1.7rem;
     letter-spacing: 1px;
@@ -629,7 +634,7 @@ border: 1px solid black;
 .textC{
     font-family: matter;
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     font-weight: bold;
 }
 
@@ -659,7 +664,7 @@ border: 1px solid black;
 }
 
 .bd-cards:hover a {
-    background-color: white;
+    background-color: transparent;
     color: black;
 }
 
@@ -899,6 +904,50 @@ border: 1px solid black;
     font-size:1.9rem;
 }
 
+.media-links:after{
+    content: "";
+    position: absolute;
+}
+
+
+.download-btn{
+    z-index: 2;
+}
+
+
+.download-btn::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background-color: #dffd5f;
+    z-index: -1;
+    color: black;
+    transition: all linear .5s;
+}
+.download-btn:hover:after{
+    top: 0;
+
+}
+
+.get-in-touch::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background-color: #dffd5f;
+    z-index: -1;
+    color: black;
+    transition: all linear .5s;
+}
+.get-in-touch:hover:after{
+    top: 0;
+
+}
 
 .ppl-container{
     transform-origin: center;
@@ -1003,7 +1052,7 @@ border: 1px solid black;
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .bs-cards{
         width: 100%;
     }

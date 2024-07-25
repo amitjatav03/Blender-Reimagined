@@ -80,7 +80,7 @@
                 <a class="rolling-text" href="#">Jobs</a>
             </div>
 
-            <button class="absolute top-[3%] right-[5%] px-4 py-2 text-sm border-2 border-white rounded-[4rem]">Downloads</button>
+            <button class="download-btn z-1 absolute top-[3%] right-[5%] px-4 py-2 text-[1vw] border-2 overflow-hidden hover:text-black border-white rounded-[4rem]">Download</button>
 
             <div class="left-part absolute top-0 left-0 w-[6%] h-full flex flex-col items-center justify-center gap-2">
                 <div class="media-buttons">
@@ -126,7 +126,7 @@
             </div>
             <div class="nav-menu font-[antique-olive]  text-white flex-col absolute h-screen w-full z-[300] bg-[--darkColor] items-center justify-center pb-20 hidden">
                 <i class="ri-close-large-line absolute top-[4%] right-[7%] text-[8vw] font-bold nav-close-btn"></i>
-                <a href="#">Downloads</a>
+                <a href="#">Download</a>
                 <a href="#">Features</a>
                 <a href="#">Support</a>
                 <a href="#">About</a>
@@ -137,12 +137,12 @@
 
 
         <div class="blender-studio-mobile hidden max-sm:block">
-            <h1 class="text-white text-[10vw] w-full text-center font-[antique-olive] tracking-tight py-10">Blender Studio</h1>
+            <h1 class="text-white text-[10vw] w-full text-center font-[antique-olive] tracking-tighter py-10">Blender Studio</h1>
             <div class="bs-mbl-container">
                 <div class="bs-mbl-cards">
                     <div class="bs-cards-top">
                         <div class="bs-vid-container">
-                            <video autoplay muted loop src="videos/blender-studio-videos/bsvid1.mp4"></video>
+                            <video class="monkey" autoplay muted loop src="videos/blender-studio-videos/bsvid1.mp4"></video>
                         </div>
                     </div>
                     <div class="bs-cards-btm">
@@ -194,7 +194,7 @@
                         
                         <div class="bs-videos">
                             <!-- <img class="card-img" src="images/blender-studio-images/bs-img1.jpg" alt=""> -->
-                            <video autoplay muted loop class="card-vid" poster="images/blender-studio-images/bs-img1.jpg">
+                            <video autoplay muted loop class="card-vid monkey" poster="images/blender-studio-images/bs-img1.jpg">
                                 <source src="videos/blender-studio-videos/bsvid1.mp4">
                             </video>
                         </div>
@@ -282,8 +282,8 @@
 
         <div class="blender-dev-section w-full h-[150vh] bg-[--darkColor] flex flex-col gap-[5rem] overflow-hidden max-sm:h-[100vh] max-sm:hidden">
 
-            <div class="bd-heading w-full h-[20%] pt-20 px-20">
-                <h1 class="text-white text-[8vw] font-[antique-olive] font-bold leading-none max-sm:text-[12vw] tracking-tighter text-center">Blender Development</h1>
+            <div class="bd-heading w-full h-[20%] pt-20 px-[5rem] ml-[3rem]">
+                <h1 class="text-white text-[9vw] font-[antique-olive] font-bold leading-none max-sm:text-[12vw] tracking-tighter ">Blender <br> Development</h1>
             </div>
             <div class="wrapper">
                 <!-- card 1-->
@@ -415,7 +415,7 @@
         
         <div class="eyn-section w-full h-screen max-sm:h-[100vh] bg-[--darkColor] text-white overflow-hidden max-sm:hidden">
             <!-- <div class="eyn-heading text-8xl tracking-tighter w-full text-center py-10 text-black font-[gilroy] font-bold uppercase">Everything You Need</div> -->
-            <div class="eyn-heading text-8xl max-sm:text-[10vw] tracking-tighter w-full text-center py-10 text-white font-[antique-olive] font-bold uppercase">Everything You Need</div>
+            <div class="eyn-heading text-8xl max-sm:text-[10vw] tracking-tighter w-full text-center py-10 text-white font-[antique-olive] font-bold">Everything You Need</div>
             <!-- <marquee behavior="loop" direction="horizontal">
                 
             </marquee> -->
@@ -449,20 +449,20 @@
 
                 </div>
                 <div class="eyn-dets justify-center eyn-dets2 flex flex-col px-12 max-sm:px-6">
-                    <h1>Masterful Modeling, Sculpting, and UV Unleashed</h1>
+                    <h1>Masterful Modeling</h1>
                     <p>Blender provides a comprehensive suite of modeling tools that streamline the creation, transformation, and refinement of models. Featuring full N-Gon support, advanced edge operations, multi-resolution and dynamic subdivision, and Python scripting for custom tools and add-ons, it caters to every modeling requirement with exceptional finesse.</p>
                 </div>
                 <div class="eyn-dets justify-center eyn-dets3 flex flex-col px-12 max-sm:px-6">
-                    <h1>VFX Tracking: Blender's Premier Solution</h1>
+                    <h1>VFX Tracking</h1>
                     <p>Blender, lauded as "probably the best tracker in the market" by VFX professionals, delivers production-ready camera and object tracking with effortless import, masking, and real-time 3D scene viewing. Featuring auto and manual tracking, advanced camera reconstruction, and support for planar tracking and tripod solvers, it's an indispensable tool for VFX.
                     </p>
                 </div>
                 <div class="eyn-dets justify-center eyn-dets4 flex flex-col px-12 max-sm:px-6">
-                    <h1>Animation & Rigging: Creative Magic with Blender's Top Animation & Rigging Tools!</h1>
+                    <h1>Animation & Rigging</h1>
                     <p>Blender's powerful rigging and animation tools offer high-quality envelope, skeleton, and automatic skinning, complemented by B-spline interpolated bones, a curve editor, and custom bone shapes for efficient input and sound synchronization.</p>
                 </div>
                 <div class="eyn-dets justify-center eyn-dets5 flex flex-col px-12 max-sm:px-6">
-                    <h1>Story Art: Bridging 2D and 3D</h1>
+                    <h1>Story Art</h1>
                     <p>Draw directly in a 3D viewport for enhanced storyboard and 2D artistry, featuring 2D-3D integration, full animation support with onion skinning, customizable layers and colors, and the ability to sculpt brush strokes and parent them to 3D objects.</p>
                 </div>
                 <div class="eyn-dets justify-center eyn-dets6 flex flex-col px-12 max-sm:px-6">
@@ -538,7 +538,7 @@
                 <h1 class="pl-[10rem] max-sm:pl-0">let's make</h1>
                 <h1 >great work</h1>
                 <h1 class="pl-[20rem] max-sm:pl-0">together</h1>
-                <button class="absolute top-1/2 right-[5%] max-sm:right-[33%] max-sm:top-[70%] -translate-y-1/2 font-[matter] bg-white text-xl font-bold text-black px-6 py-4 max-sm:text-sm rounded-full">Get in Touch</button>
+                <button class="get-in-touch absolute top-1/2 right-[5%] max-sm:right-[33%] max-sm:top-[70%] -translate-y-1/2 font-[matter] bg-white text-xl font-bold text-black px-6 py-4 max-sm:text-sm rounded-full overflow-hidden">Get in Touch</button>
             </div>
         </div>
 
@@ -547,7 +547,7 @@
             <img class="btm-img h-1/2 w-full z-[999] absolute top-[50%]" src="images/blender-btmimg.png" alt="">
 
             <div class="ppl-container top-0 left-0 absolute w-full h-full overflow-hidden flex items-center justify-center">
-                <div class="ppl-heading absolute top-[10%]">
+                <div class="ppl-heading absolute top-[12%]">
                     <h1 class="text-8xl max-sm:text-[7vw] font-[antique-olive] text-[--whiteColor] mt-10">It's about people.</h1>
     
                 </div>
