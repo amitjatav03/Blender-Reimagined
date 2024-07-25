@@ -180,6 +180,17 @@ landingBg.addEventListener("mouseout", function(){
 
 
 
+let navMenu = document.querySelector(".nav-menu");
+let navOpen = document.querySelector(".nav-open-btn");
+let navClose = document.querySelector(".nav-close-btn");
+navOpen.addEventListener("click", function(){
+    navMenu.style.display = "flex";
+})
+navClose.addEventListener("click", function(){
+    navMenu.style.display = "none";
+})
+
+
 
 let topLinks = document.querySelectorAll(".top-part a");
 let cursor = document.querySelector(".cursor");

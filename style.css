@@ -240,6 +240,27 @@ a{
 .letter:nth-child(11) { transition-delay: 0.15s; }
 
 
+
+.nav-menu a{
+    text-align: center;
+    font-family: antique-olive;
+    text-transform: lowercase;
+    font-size: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 4px;
+    border-radius: 5px;
+
+}
+
+.nav-menu a:hover{
+    background: white;
+    text-decoration: underline;
+    color: black;
+}
+
+
 /* bs-cards1 relative w-[90%] h-full text-white inline-block overflow-hidden */
 .bs-cards{
     position: relative;
@@ -901,8 +922,8 @@ border: 1px solid black;
 
 .bs-mbl-cards{
     width: 80%;
-    height: 50vh;
-    background-color: white;
+    height: 40vh;
+    border: 1px solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -926,7 +947,6 @@ border: 1px solid black;
     padding-top: 2rem;
     width: 80%;
     height: 90%;
-    background-color: white;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -951,13 +971,35 @@ border: 1px solid black;
 }
 
 .bs-cards-btm h2{
-    font-size: 7vw;
-    font-family: antique-olive;
-    line-height: 7vw;
+    font-size: 6vw;
+    font-family: matter;
+    line-height: 7.1vw;
     text-align: center;
     letter-spacing: -2px;
+    color: white;
 }
 
+.mbl-peoples{
+    display: flex;
+    margin-left: 2rem;
+}
+
+
+
+.mbl-ppl-img{
+    margin-left: -2rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+.mbl-ppl-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -997,25 +1039,25 @@ border: 1px solid black;
     }
 
     .industry-image{
-        width: 25rem;
-        height: 20rem;
+        width: 13rem;
+        height: 10rem;
 
     }
     
     .car-item1{
-        transform: rotateY(0deg) translateZ(680px);
+        transform: rotateY(0deg) translateZ(350px);
     }
     .car-item2{
-        transform: rotateY(-35deg) translateZ(680px);
+        transform: rotateY(-35deg) translateZ(350px);
     }
     .car-item3{
-        transform: rotateY(-70deg) translateZ(680px);
+        transform: rotateY(-70deg) translateZ(350px);
     }
     .car-item4{
-        transform: rotateY(-105deg) translateZ(680px);
+        transform: rotateY(-105deg) translateZ(350px);
     }
     .car-item5{
-        transform: rotateY(-140deg) translateZ(680px);
+        transform: rotateY(-140deg) translateZ(350px);
     }
 
 
@@ -1066,9 +1108,9 @@ border: 1px solid black;
     }
 
     .upr-stripe, .lwr-stripe{
-        left: -10%;
+        left: 67%;
         width: 1rem;
-        height: 5px;
+        height: 6px;
         transform-origin: right;
         transform: scaleX(0);
     }

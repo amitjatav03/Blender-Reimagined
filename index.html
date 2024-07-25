@@ -38,7 +38,7 @@
             <span>N</span>
             <span>D</span>
         </div>
-        <h1 class="loader-r-text max-sm:text-6xl text-9xl font-bold absolute text-[#F4792B] top-1/2 left-1/2 max-sm:pl-[5rem] -translate-x-1/2 -translate-y-1/2">
+        <h1 class="loader-r-text max-sm:text-6xl text-9xl font-bold absolute text-[#F4792B] top-1/2 left-1/2 max-sm:pl-[7rem] -translate-x-1/2 -translate-y-1/2">
             R
             <div class="upr-stripe"></div>
             <div class="lwr-stripe"></div>
@@ -114,17 +114,30 @@
 
         </div>
 
-        <div class="landing-page-mobile w-full h-screen bg-slate-900 hidden max-sm:block">
-            <div class="blender-logo-mbl z-[10] absolute top-[2%] left-[4%] flex items-center justify-center gap-2">
+        
+        <div class="landing-page-mobile relative w-full h-screen bg-slate-900 hidden max-sm:block overflow-hidden">
+            <div class="blender-logo-mbl z-[10] absolute top-[2.5%] left-[4%] flex items-center justify-center gap-2">
                 <img class="w-12 mb-2" src="images/blender-icon.png" alt="">
                 <h1 class="font-[heebo] text-[7vw] text-white font-bold">Blender</h1>
             </div>
             <video class="object-cover w-full h-screen absolute top-0 left-0" autoplay muted loop src="videos/mobile-landing-vid.mp4"></video>
+            <div class="nav-open-btn z-[10] border-2 border-white rounded-full w-[3rem] h-[3rem] absolute top-[2%] right-[5%] flex items-center justify-center">
+                <i class="ri-menu-4-line text-white text-2xl"></i>
+            </div>
+            <div class="nav-menu font-[antique-olive]  text-white flex-col absolute h-screen w-full z-[300] bg-[--darkColor] items-center justify-center pb-20 hidden">
+                <i class="ri-close-large-line absolute top-[4%] right-[7%] text-[8vw] font-bold nav-close-btn"></i>
+                <a href="#">Downloads</a>
+                <a href="#">Features</a>
+                <a href="#">Support</a>
+                <a href="#">About</a>
+                <a href="#">Community</a>
+                <a href="#">Donate</a>
+            </div>
         </div>
 
 
         <div class="blender-studio-mobile hidden max-sm:block">
-            <h1 class="text-white text-[8vw] w-full text-center font-[antique-olive] py-10">Blender Studio</h1>
+            <h1 class="text-white text-[10vw] w-full text-center font-[antique-olive] tracking-tight py-10">Blender Studio</h1>
             <div class="bs-mbl-container">
                 <div class="bs-mbl-cards">
                     <div class="bs-cards-top">
@@ -143,7 +156,7 @@
                         </div>
                     </div>
                     <div class="bs-cards-btm">
-                        <h2>Baby Suzanne in <br> Grease Pencil</h2>
+                        <h2>Sprite Fright: Sculpting <br> Advice</h2>
                     </div>
                 </div>
                 <div class="bs-mbl-cards">
@@ -153,7 +166,7 @@
                         </div>
                     </div>
                     <div class="bs-cards-btm">
-                        <h2>Baby Suzanne in <br> Grease Pencil</h2>
+                        <h2>Combining 2D Animation <br> in a 3D Environment</h2>
                     </div>
                 </div>
                 <div class="bs-mbl-cards">
@@ -163,7 +176,7 @@
                         </div>
                     </div>
                     <div class="bs-cards-btm">
-                        <h2>Baby Suzanne in <br> Grease Pencil</h2>
+                        <h2>Sprite Fright: <br> Set Dressing Tips</h2>
                     </div>
                 </div>
             </div>
@@ -372,7 +385,7 @@
         </div>
 
 
-        <div class="industry-section w-full h-[180vh] relative bg-[--darkColor] overflow-hidden max-sm:h-[120vh]">
+        <div class="industry-section w-full h-[180vh] relative bg-[--darkColor] overflow-hidden max-sm:h-[120vh] max-sm:hidden">
             <div class="industry-content absolute left-[5%] top-[7%] text-white">
                 <h1 class="font-[antique-olive] text-[6vw] leading-[6vw] max-sm:text-[12vw] max-sm:leading-[12vw] font-bold">Part of <br>the industry</h1>
                 <p class="font-matter text-xl w-[70vw] mt-8 max-sm:text-[4.5vw] max-sm:leading-[6vw]">Blender is a member of ASWF, Khronos, Linux Foundation and OIN. It's also well supported by major hardware vendors such as AMD, Apple, Intel, and NVIDIA.</p>
@@ -459,7 +472,7 @@
             </div>
         </div>
 
-        <div class="eyn-section-mbl w-full  flex-col items-center justify-center gap-12 py-6 pb-12 hidden max-sm:flex">
+        <div class="eyn-section-mbl w-full  flex-col items-center justify-center gap-12 py-6 pb-12 mt-[5rem] hidden max-sm:flex overflow-hidden">
             <marquee behavior="" direction="horizontal">
                 <h1 class="text-5xl text-white font-[antique-olive] text-center">Everything You Need</h1>
             </marquee>
@@ -561,6 +574,25 @@
                         <img src="images/people-img/pplimg4.jpg" alt="">
                     </div>
                     <h2>The demo scene is back <br>with Nodevember</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="ppl-section-mbl w-full h-[40vh] flex flex-col justify-center items-center gap-6">
+
+            <h1 class="text-white text-3xl font-[antique-olive]">It's About People</h1>
+            <div class="mbl-peoples">
+                <div class="mbl-ppl-img z-[1]">
+                    <img src="images/people-img/pplimg1.jpg" alt="">
+                </div>
+                <div class="mbl-ppl-img z-[2]">
+                    <img src="images/people-img/pplimg2.jpg" alt="">
+                </div>
+                <div class="mbl-ppl-img z-[3]">
+                    <img src="images/people-img/pplimg3.jpg" alt="">
+                </div>
+                <div class="mbl-ppl-img z-[4]">
+                    <img src="images/people-img/pplimg4.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -843,7 +875,7 @@
         </div>
 
 
-        <div class="main-footer-mbl w-full relative bg-[#dadada] justify-center flex-col gap-6 py-12 hidden max-sm:flex">
+        <div class="main-footer-mbl w-full relative bg-[#dadada] justify-center flex-col gap-6 py-12 hidden overflow-hidden max-sm:flex">
             <div class="footer-divs flex justify-center items-center flex-col">
                 <h1 class="footer-headings">ABOUT</h1>
                 <ol class="footer-items">
