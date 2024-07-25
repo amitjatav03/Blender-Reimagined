@@ -31,14 +31,14 @@
             <rect x="40%" y="60%" width="20%" height="20%"></rect>
         </svg> -->
         <div class="loader-anime bg-[#2d2d2d] w-full h-screen absolute right-[-100%]"></div>
-        <div class="loader-title text-9xl font-bold pr-[10%] hidden">
+        <div class="loader-title text-9xl max-sm:text-6xl font-bold pr-[10%] hidden">
             <span>B</span>
             <span>L</span>
             <span>E</span>
             <span>N</span>
             <span>D</span>
         </div>
-        <h1 class="loader-r-text text-9xl font-bold absolute text-[#F4792B] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <h1 class="loader-r-text max-sm:text-6xl text-9xl font-bold absolute text-[#F4792B] top-1/2 left-1/2 max-sm:pl-[5rem] -translate-x-1/2 -translate-y-1/2">
             R
             <div class="upr-stripe"></div>
             <div class="lwr-stripe"></div>
@@ -83,26 +83,7 @@
             <button class="absolute top-[3%] right-[5%] px-4 py-2 text-sm border-2 border-white rounded-[4rem]">Downloads</button>
 
             <div class="left-part absolute top-0 left-0 w-[6%] h-full flex flex-col items-center justify-center gap-2">
-                <!-- <h3 class="rotate-[-90deg] origin-left-center mb-14 text-white text-xl">Social Media</h3> -->
-                <!-- <div class="icons bg-white rounded-full w-10 h-10 flex items-center justify-center"><i class="ri-instagram-fill text-black text-2xl"></i></div>
-                <div class="icons bg-white rounded-full w-10 h-10 flex items-center justify-center"><i class="ri-youtube-fill text-black text-2xl"></i></div>
-                <div class="icons bg-white rounded-full w-10 h-10 flex items-center justify-center"><i class="ri-twitter-fill text-black text-2xl"></i></div> -->
                 <div class="media-buttons">
-                    <!-- <a href="#" class="media-links">
-                        <i class='bx bxl-youtube'></i>
-                    </a>
-                    <a href="#" class="media-links" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);" >
-                        <i  class='bx bxl-instagram' ></i>
-                    </a>
-                    <a href="#" class="media-links" style="background-color:#1877F2">
-                        <i class='bx bxl-facebook' ></i>
-                    </a>
-                    <a href="#" class="media-links" style="background-color:#0077B5" >
-                        <i class='bx bxl-linkedin'></i>
-                    </a>
-                    <a href="#" class="media-links" style="background-color:#5a47dc">
-                        <i class='bx bxl-mastodon' ></i>
-                    </a> -->
                     <a href="#" class="media-links">
                         <i class='bx bxl-youtube'></i>
                     </a>
@@ -131,20 +112,64 @@
             </div>
 
 
-            <!-- SHAPES -->
-            <!-- <div class="shape-top-rgt absolute top-0 right-0 rounded-[30%] bg-[#0C0B0B] w-[17%] h-[26%]">
-                <div class="nav-circle absolute bottom-4 left-4 w-[9rem] h-[9rem] border-[1px] rotate-45 border-white rounded-full flex justify-center items-center overflow-hidden text-white hover:text-black">
-                    <h2 class="text-lg">Downloads</h2>
-                </div>
-            </div> -->
-            <!-- <div class="shape-btm-rgt absolute bottom-0 right-0 rounded-[20%] bg-[#0C0B0B] w-[17%] h-[40%] flex justify-center items-center">
-                <img class="corner-img w-[85%] h-[85%] rounded-[inherit]" src="images/corner-img.jpg" alt="">
-            </div> -->
         </div>
 
-        <div class="landing-page-mobile w-full h-screen bg-slate-900 hidden max-sm:block"></div>
+        <div class="landing-page-mobile w-full h-screen bg-slate-900 hidden max-sm:block">
+            <div class="blender-logo-mbl z-[10] absolute top-[2%] left-[4%] flex items-center justify-center gap-2">
+                <img class="w-12 mb-2" src="images/blender-icon.png" alt="">
+                <h1 class="font-[heebo] text-[7vw] text-white font-bold">Blender</h1>
+            </div>
+            <video class="object-cover w-full h-screen absolute top-0 left-0" autoplay muted loop src="videos/mobile-landing-vid.mp4"></video>
+        </div>
 
-        <div class="blender-studio-section w-full h-screen">
+
+        <div class="blender-studio-mobile hidden max-sm:block">
+            <h1 class="text-white text-[8vw] w-full text-center font-[antique-olive] py-10">Blender Studio</h1>
+            <div class="bs-mbl-container">
+                <div class="bs-mbl-cards">
+                    <div class="bs-cards-top">
+                        <div class="bs-vid-container">
+                            <video autoplay muted loop src="videos/blender-studio-videos/bsvid1.mp4"></video>
+                        </div>
+                    </div>
+                    <div class="bs-cards-btm">
+                        <h2>Baby Suzanne in <br> Grease Pencil</h2>
+                    </div>
+                </div>
+                <div class="bs-mbl-cards">
+                    <div class="bs-cards-top">
+                        <div class="bs-vid-container">
+                            <video autoplay muted loop poster="images/blender-studio-images/bsposter2.jpg" src="videos/blender-studio-videos/bsvid2.mp4"></video>
+                        </div>
+                    </div>
+                    <div class="bs-cards-btm">
+                        <h2>Baby Suzanne in <br> Grease Pencil</h2>
+                    </div>
+                </div>
+                <div class="bs-mbl-cards">
+                    <div class="bs-cards-top">
+                        <div class="bs-vid-container">
+                            <video autoplay muted loop src="videos/blender-studio-videos/bsvid3.mp4"></video>
+                        </div>
+                    </div>
+                    <div class="bs-cards-btm">
+                        <h2>Baby Suzanne in <br> Grease Pencil</h2>
+                    </div>
+                </div>
+                <div class="bs-mbl-cards">
+                    <div class="bs-cards-top">
+                        <div class="bs-vid-container">
+                            <video autoplay muted loop src="videos/blender-studio-videos/bsvid4.mp4"></video>
+                        </div>
+                    </div>
+                    <div class="bs-cards-btm">
+                        <h2>Baby Suzanne in <br> Grease Pencil</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blender-studio-section w-full h-screen overflow-hidden max-sm:hidden">
             <div class="bs-container w-full h-full whitespace-nowrap">
                 <div class="bs-title relative w-3/5 h-full text-white inline-block">
                     <h1 class="text-[13vw] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tracking-tighter leading-none font-[antique-olive]">Blender <br>Studio</h1>
@@ -221,7 +246,7 @@
             </div>
         </div>
 
-        <div class="open-source-section w-full h-[120vh] max-sm:h-[80vh] flex  flex-col items-center justify-center bg-[--darkColor] overflow-hidden ">
+        <div class="open-source-section w-full h-[120vh] max-sm:h-[100vh] flex  flex-col items-center justify-center bg-[--darkColor] overflow-hidden max-sm:hidden">
             <!-- <div class="opener-div absolute w-[20%] h-[40%] bg-slate-800"></div> -->
             <div class="os-content relative h-[9.7%] mb-20">
                 <svg class="title-opener-start absolute w-[4.5rem] max-sm:w-[2rem] top-[0%] left-[-5rem]" viewBox="0 0 53 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -242,7 +267,7 @@
             </div>
         </div>
 
-        <div class="blender-dev-section w-full h-[150vh] bg-[--darkColor] flex flex-col gap-[5rem] overflow-hidden max-sm:h-[120vh] ">
+        <div class="blender-dev-section w-full h-[150vh] bg-[--darkColor] flex flex-col gap-[5rem] overflow-hidden max-sm:h-[100vh] max-sm:hidden">
 
             <div class="bd-heading w-full h-[20%] pt-20 px-20">
                 <h1 class="text-white text-[8vw] font-[antique-olive] font-bold leading-none max-sm:text-[12vw] tracking-tighter text-center">Blender Development</h1>
@@ -347,10 +372,10 @@
         </div>
 
 
-        <div class="industry-section w-full h-[180vh] relative bg-[--darkColor] overflow-hidden">
+        <div class="industry-section w-full h-[180vh] relative bg-[--darkColor] overflow-hidden max-sm:h-[120vh]">
             <div class="industry-content absolute left-[5%] top-[7%] text-white">
-                <h1 class="font-[antique-olive] text-[6rem] leading-[6rem] font-bold">Part of <br>the industry</h1>
-                <p class="matter text-xl w-[70vw] mt-8">Blender is a member of ASWF, Khronos, Linux Foundation and OIN. It's also well supported by major hardware vendors such as AMD, Apple, Intel, and NVIDIA.</p>
+                <h1 class="font-[antique-olive] text-[6vw] leading-[6vw] max-sm:text-[12vw] max-sm:leading-[12vw] font-bold">Part of <br>the industry</h1>
+                <p class="font-matter text-xl w-[70vw] mt-8 max-sm:text-[4.5vw] max-sm:leading-[6vw]">Blender is a member of ASWF, Khronos, Linux Foundation and OIN. It's also well supported by major hardware vendors such as AMD, Apple, Intel, and NVIDIA.</p>
             </div>
             <div class="carousel relative top-[40%] w-full h-[40%]  flex justify-center items-center">
                 <div class="moving-carousel">
@@ -375,20 +400,21 @@
     
         </div>
         
-        <div class="eyn-section relative w-full h-screen bg-[--darkColor] text-white overflow-hidden">
+        <div class="eyn-section w-full h-screen max-sm:h-[100vh] bg-[--darkColor] text-white overflow-hidden max-sm:hidden">
             <!-- <div class="eyn-heading text-8xl tracking-tighter w-full text-center py-10 text-black font-[gilroy] font-bold uppercase">Everything You Need</div> -->
-            <div class="eyn-heading text-8xl tracking-tighter w-full text-center py-10 text-white font-[gilroy] font-bold uppercase">Everything You Need</div>
+            <div class="eyn-heading text-8xl max-sm:text-[10vw] tracking-tighter w-full text-center py-10 text-white font-[antique-olive] font-bold uppercase">Everything You Need</div>
+            <!-- <marquee behavior="loop" direction="horizontal">
+                
+            </marquee> -->
             <!-- <div class="eyn-heading rotate-[-90deg] absolute top-[63vw] left-[20vh] w-[100vw] h-[20vh] flex items-center justify-center">
                 <h1 class="text-center text-6xl uppercase">Everything You Need</h1>
             </div> -->
-            <div class="eyn-circle absolute w-[200vw] h-[200vw] rounded-full top-[55%] left-[130%] -translate-x-1/2 -translate-y-1/2">
+            <div class="eyn-circle absolute w-[200vw] h-[200vw] max-sm:w-[400vw] max-sm:h-[400vw] rounded-full top-[55%] max-sm:top-[50%] left-[130%] max-sm:left-[250%] -translate-x-1/2 -translate-y-1/2">
                 <div class="stripe strp1">
                     <img src="images/everything-you-need-images/eyn-img1.jpg" alt="">
-                    <!-- <img src="https://ddz4ak4pa3d19.cloudfront.net/cache/e1/40/e140dfe12340687be03b9c1b39e417f1.jpg" alt=""> -->
                 </div>
                 <div class="stripe strp2">
                     <img src="images/everything-you-need-images/eyn-img2.jpg" alt="">
-                     <!-- <img src="https://ddz4ak4pa3d19.cloudfront.net/cache/1f/12/1f120093a97857fd8159e2e441e8718b.jpg" alt=""> -->
                 </div>
                 <div class="stripe strp3">
                     <img src="images/everything-you-need-images/eyn-img3.jpg" alt="">
@@ -403,71 +429,92 @@
                     <img src="images/everything-you-need-images/eyn-img6.jpg" alt="">
                 </div>
             </div>
-            <div class="eyn-details relative w-[40vw] h-[57%] top-[30%] left-[50%] -translate-y-1/2 overflow-hidden">
-                <div class="eyn-dets justify-center eyn-dets justify-center1 flex flex-col px-12">
+            <div class="eyn-details relative w-[40vw] h-[57%] max-sm:w-[60vw] max-sm:h-[40%] top-[30%] left-[50%] max-sm:left-[40%] -translate-y-1/2 overflow-hidden">
+                <div class="eyn-dets justify-center eyn-dets1 flex flex-col px-12 max-sm:px-6">
                     <h1>Cycles Render Engine</h1>
                     <p>Cycles is Blender's robust, unbiased path-tracing engine, renowned for producing breathtakingly realistic renders. It boasts real-time viewport preview, versatile CPU and GPU rendering, PBR shaders, HDR lighting, and comprehensive VR rendering support.</p>
 
-                    <!-- <p>Cycles is Blender's built-in powerful unbiased path-tracer engine that offers stunning ultra-realistic rendering.</p>
-                    <ul class="eyn-list">
-                        <li>Real-time viewport preview</li>
-                        <li>CPU & GPU rendering</li>
-                        <li>PBR shaders & HDR lighting support</li>
-                        <li>VR rendering support</li>
-                    </ul> -->
                 </div>
-                <div class="eyn-dets justify-center eyn-dets justify-center2 flex flex-col px-12">
+                <div class="eyn-dets justify-center eyn-dets2 flex flex-col px-12 max-sm:px-6">
                     <h1>Masterful Modeling, Sculpting, and UV Unleashed</h1>
                     <p>Blender provides a comprehensive suite of modeling tools that streamline the creation, transformation, and refinement of models. Featuring full N-Gon support, advanced edge operations, multi-resolution and dynamic subdivision, and Python scripting for custom tools and add-ons, it caters to every modeling requirement with exceptional finesse.</p>
-                    <!-- <ul class="eyn-list">
-                        <li>Full N-Gon support</li>
-                        <li>Edge slide, inset, grid and bridge fill, and more</li>
-                        <li>Multi-resolution and Dynamic subdivision</li>
-                        <li>Python scripting for custom tools and add-ons</li>
-                    </ul> -->
                 </div>
-                <div class="eyn-dets justify-center eyn-dets justify-center3 flex flex-col px-12">
+                <div class="eyn-dets justify-center eyn-dets3 flex flex-col px-12 max-sm:px-6">
                     <h1>VFX Tracking: Blender's Premier Solution</h1>
                     <p>Blender, lauded as "probably the best tracker in the market" by VFX professionals, delivers production-ready camera and object tracking with effortless import, masking, and real-time 3D scene viewing. Featuring auto and manual tracking, advanced camera reconstruction, and support for planar tracking and tripod solvers, it's an indispensable tool for VFX.
                     </p>
-                    <!-- <ul class="eyn-list">
-                        <li>Auto and Manual tracking</li>
-                        <li>Powerful camera reconstruction</li>
-                        <li>Real-time preview of your tracked footage and 3D scene</li>
-                        <li>Support for Planar tracking and Tripod solvers</li>
-                    </ul> -->
                 </div>
-                <div class="eyn-dets justify-center eyn-dets justify-center4 flex flex-col px-12">
-                    <h1>Animation & Rigging: Creative Magic with Blender’s Top Animation & Rigging Tools!</h1>
-                    <p>Blender’s powerful rigging and animation tools offer high-quality envelope, skeleton, and automatic skinning, complemented by B-spline interpolated bones, a curve editor, and custom bone shapes for efficient input and sound synchronization.</p>
-                    <!-- <ul class="eyn-list">
-                        <li>Envelope, skeleton and automatic skinning</li>
-                        <li>B-spline interpolated bones</li>
-                        <li>Curve editor and dope sheets</li>
-                        <li>Custom bone shapes for fast input</li>
-                        <li>Sound synchronization</li>
-                    </ul> -->
+                <div class="eyn-dets justify-center eyn-dets4 flex flex-col px-12 max-sm:px-6">
+                    <h1>Animation & Rigging: Creative Magic with Blender's Top Animation & Rigging Tools!</h1>
+                    <p>Blender's powerful rigging and animation tools offer high-quality envelope, skeleton, and automatic skinning, complemented by B-spline interpolated bones, a curve editor, and custom bone shapes for efficient input and sound synchronization.</p>
                 </div>
-                <div class="eyn-dets justify-center eyn-dets justify-center5 flex flex-col px-12">
+                <div class="eyn-dets justify-center eyn-dets5 flex flex-col px-12 max-sm:px-6">
                     <h1>Story Art: Bridging 2D and 3D</h1>
                     <p>Draw directly in a 3D viewport for enhanced storyboard and 2D artistry, featuring 2D-3D integration, full animation support with onion skinning, customizable layers and colors, and the ability to sculpt brush strokes and parent them to 3D objects.</p>
-                    <!-- <ul class="eyn-list">
-                        <li>Combine 2D with 3D right in the viewport</li>
-                        <li>Full Animation Support with Onion Skinning</li>
-                        <li>Layers & Colors for Stroke and Fill</li>
-                        <li>Sculpt brush strokes & Parent to 3D objects</li>
-                    </ul> -->
                 </div>
-                <div class="eyn-dets justify-center eyn-dets justify-center6 flex flex-col px-12">
+                <div class="eyn-dets justify-center eyn-dets6 flex flex-col px-12 max-sm:px-6">
                     <h1>Tailor Blender to Your Needs</h1>
-                    <p>Blender's flexible Python interface allows you to customize layouts, colors, and fonts, support high-resolution screens, create personal tools and add-ons, draw over the OpenGL viewport, and connect with Blender’s Render API.</p>
-                    <!-- <ul class="eyn-list">
-                        <li>Customize the interface layout and colors</li>
-                        <li>Hi-res/Retina screen support</li>
-                        <li>Create your own tools and add-ons</li>
-                        <li>Draw over the OpenGL viewport</li>
-                        <li>Connect with Blender's Render API</li>
-                    </ul> -->
+                    <p>Blender's flexible Python interface allows you to customize layouts, colors, and fonts, support high-resolution screens, create personal tools and add-ons, draw over the OpenGL viewport, and connect with Blender's Render API.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="eyn-section-mbl w-full  flex-col items-center justify-center gap-12 py-6 pb-12 hidden max-sm:flex">
+            <marquee behavior="" direction="horizontal">
+                <h1 class="text-5xl text-white font-[antique-olive] text-center">Everything You Need</h1>
+            </marquee>
+            <div class="eyn-mbl-cards">
+                <div class="eyn-top">
+                    <img src="images/everything-you-need-images/eyn-img1.jpg" alt="">
+                </div>
+                <div class="eyn-btm">
+                    <h1>Cycles Render Engine</h1>
+                    <p>Cycles is Blender's robust, unbiased path-tracing engine, renowned for producing breathtakingly realistic renders. It boasts real-time viewport preview, versatile CPU and GPU rendering, PBR shaders, HDR lighting, and comprehensive VR rendering support.</p>
+                </div>
+            </div>
+            <div class="eyn-mbl-cards">
+                <div class="eyn-top">
+                    <img src="images/everything-you-need-images/eyn-img2.jpg" alt="">
+                </div>
+                <div class="eyn-btm">
+                    <h1>Masterful Modeling</h1>
+                    <p>Blender provides a comprehensive suite of modeling tools that streamline the creation, transformation, and refinement of models. Featuring full N-Gon support, advanced edge operations, multi-resolution and dynamic subdivision, and Python scripting for custom tools and add-ons, it caters to every modeling requirement with exceptional finesse.</p>
+                </div>
+            </div>
+            <div class="eyn-mbl-cards">
+                <div class="eyn-top">
+                    <img src="images/everything-you-need-images/eyn-img3.jpg" alt="">
+                </div>
+                <div class="eyn-btm">
+                    <h1>VFX Tracking</h1>
+                    <p>Blender, lauded as "probably the best tracker in the market" by VFX professionals, delivers production-ready camera and object tracking with effortless import, masking, and real-time 3D scene viewing. Featuring auto and manual tracking, advanced camera reconstruction, and support for planar tracking and tripod solvers, it's an indispensable tool for VFX.</p>
+                </div>
+            </div>
+            <div class="eyn-mbl-cards">
+                <div class="eyn-top">
+                    <img src="images/everything-you-need-images/eyn-img4.jpg" alt="">
+                </div>
+                <div class="eyn-btm">
+                    <h1>Animation & Rigging</h1>
+                    <p>Blender's powerful rigging and animation tools offer high-quality envelope, skeleton, and automatic skinning, complemented by B-spline interpolated bones, a curve editor, and custom bone shapes for efficient input and sound synchronization.</p>
+                </div>
+            </div>
+            <div class="eyn-mbl-cards">
+                <div class="eyn-top">
+                    <img src="images/everything-you-need-images/eyn-img5.jpg" alt="">
+                </div>
+                <div class="eyn-btm">
+                    <h1>Story Art</h1>
+                    <p>Draw directly in a 3D viewport for enhanced storyboard and 2D artistry, featuring 2D-3D integration, full animation support with onion skinning, customizable layers and colors, and the ability to sculpt brush strokes and parent them to 3D objects.</p>
+                </div>
+            </div>
+            <div class="eyn-mbl-cards">
+                <div class="eyn-top">
+                    <img src="images/everything-you-need-images/eyn-img6.jpg" alt="">
+                </div>
+                <div class="eyn-btm">
+                    <h1>Tailor Blender</h1>
+                    <p>Blender's flexible Python interface allows you to customize layouts, colors, and fonts, support high-resolution screens, create personal tools and add-ons, draw over the OpenGL viewport, and connect with Blender's Render API.</p>
                 </div>
             </div>
         </div>
@@ -478,17 +525,17 @@
                 <h1 class="pl-[10rem] max-sm:pl-0">let's make</h1>
                 <h1 >great work</h1>
                 <h1 class="pl-[20rem] max-sm:pl-0">together</h1>
-                <button class="absolute top-1/2 right-[5%] -translate-y-1/2 font-[matter] bg-white text-xl font-bold text-black px-6 py-4 rounded-full">Get in Touch</button>
+                <button class="absolute top-1/2 right-[5%] max-sm:right-[33%] max-sm:top-[70%] -translate-y-1/2 font-[matter] bg-white text-xl font-bold text-black px-6 py-4 max-sm:text-sm rounded-full">Get in Touch</button>
             </div>
         </div>
 
-        <div class="peoples-section relative w-full h-[120vh] bg-[--darkColor] overflow-hidden flex items-center justify-center">
+        <div class="peoples-section relative w-full h-[120vh] max-sm:h-[80vh] bg-[--darkColor] overflow-hidden flex items-center justify-center max-sm:hidden">
             <img class="uppr-img h-1/2 w-full z-[999] absolute top-0" src="images/blender-upprimg.png" alt="">
             <img class="btm-img h-1/2 w-full z-[999] absolute top-[50%]" src="images/blender-btmimg.png" alt="">
 
             <div class="ppl-container top-0 left-0 absolute w-full h-full overflow-hidden flex items-center justify-center">
                 <div class="ppl-heading absolute top-[10%]">
-                    <h1 class="text-8xl font-[antique-olive] text-[--whiteColor] mt-10">It's about people.</h1>
+                    <h1 class="text-8xl max-sm:text-[7vw] font-[antique-olive] text-[--whiteColor] mt-10">It's about people.</h1>
     
                 </div>
                 <div class="people ppl1">
@@ -519,7 +566,7 @@
         </div>
 
 
-        <div id="main-footer">
+        <div class="main-footer w-full h-full relative bg-[#DADADA] max-sm:hidden">
 
             <div class="footer-anime-div w-full h-[5rem] absolute top-0 left-0 overflow-hidden">
                 <div class="footer-arc absolute top-0 left-1/2 -translate-x-1/2  w-[500vw] h-[500vw] bg-[#DADADA] rounded-full rotate-[180deg]"></div>
@@ -793,6 +840,54 @@
                 
              </div>
        
+        </div>
+
+
+        <div class="main-footer-mbl w-full relative bg-[#dadada] justify-center flex-col gap-6 py-12 hidden max-sm:flex">
+            <div class="footer-divs flex justify-center items-center flex-col">
+                <h1 class="footer-headings">ABOUT</h1>
+                <ol class="footer-items">
+                    <li>BLENDER FOUNDATION</li>
+                    <li>BLENDER INSTITUTE</li>
+                    <li>LOGO AND TRADEMARK</li>
+                    <li>LICENSE</li>
+                    <li>CREDITS</li>
+                    <li>PRIVACY POLICY</li>
+                </ol>
+            </div>
+            <div class="footer-divs flex justify-center items-center flex-col">
+                <h1 class="footer-headings">DEVELOPER</h1>
+                <ol class="footer-items">
+                    <li>GET STARTED</li>
+                    <li>PROJECTS</li>
+                    <li>BLOG</li>
+                    <li>FORUM</li>
+                    <li>PYTHON API</li>
+                    <li>DOCS</li>
+                </ol>
+            </div>
+            <div class="footer-divs flex justify-center items-center flex-col">
+                <h1 class="footer-headings">ORGANIZATION</h1>
+                <ol class="footer-items">
+                    <li>DASHBOARD</li>
+                    <li>DEVELOPMENT</li>
+                    <li>DOCUMENTATION</li>
+                    <li>EDUCATION</li>
+                    <li>JOBS</li>
+                    <li>NEWS</li>
+                </ol>
+            </div>
+            <div class="footer-divs flex justify-center items-center flex-col">
+                <h1 class="footer-headings">SUPPORT</h1>
+                <ol class="footer-items">
+                    <li>MANUAL</li>
+                    <li>COMMUNITY</li>
+                    <li>FAQ</li>
+                    <li>PRESS RELEASES</li>
+                    <li>USER STORIES</li>
+                    <li>NEWS</li>
+                </ol>
+            </div>
         </div>
 
     </div>

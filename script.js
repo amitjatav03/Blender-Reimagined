@@ -478,53 +478,64 @@ function everythingYouNeedSection() {
     
     
 } 
-
 everythingYouNeedSection();
 
 
 
 
 
-peopleTl = gsap.timeline({
-    scrollTrigger: {
-        scroller: ".main",
-        trigger: ".peoples-section",
-        start: "225% top",
-        end: "top -450%",
-        pin: true,
-        scrub: 2
-    }
-})
 
-peopleTl.to(".ppl-container", {
-    scaleY: 1,
-    duration: .2
-}, 'text-split')
-.to(".uppr-img", {
-    delay: .01,
-    // top: "-130%",
-    top: "-50%",
-    duration: 3
-}, 'text-split')
-.to(".btm-img", {
-    delay: .01,
-    // top: "130%",
-    top: "100%",
-    duration: 6
-}, 'text-split')
-.to(".main", {
-    backgroundColor: "var(--darkColor)",
-})
-.from(".ppl1, .ppl2", {
-    marginLeft: "10rem",
-    x: "-250%",
-    duration: .2,
-}, 'ppl-join')
-.from(".ppl3, .ppl4", {
-    marginLeft: "10rem",
-    x: "250%",
-    duration: .2
-}, 'ppl-join')
+
+function peopleSection() {
+
+    peopleTl = gsap.timeline({
+        scrollTrigger: {
+            scroller: ".main",
+            trigger: ".peoples-section",
+            start: "225% top",
+            end: "top -450%",
+            pin: true,
+            scrub: 2
+        }
+    })
+    
+    peopleTl.to(".ppl-container", {
+        scaleY: 1,
+        duration: .2
+    }, 'text-split')
+    .to(".uppr-img", {
+        delay: .01,
+        // top: "-130%",
+        top: "-50%",
+        duration: 3
+    }, 'text-split')
+    .to(".btm-img", {
+        delay: .01,
+        // top: "130%",
+        top: "100%",
+        duration: 3 
+    }, 'text-split')
+    .to(".main", {
+        backgroundColor: "var(--darkColor)",
+    })
+    .from(".ppl1, .ppl2", {
+        marginLeft: "10rem",
+        x: "-250%",
+        duration: 4,
+    }, 'text-split')
+    .from(".ppl3, .ppl4", {
+        marginLeft: "10rem",
+        x: "250%",
+        duration: 4
+    }, 'text-split')
+    
+}
+
+
+
+
+peopleSection();
+
 
 
 
@@ -754,7 +765,7 @@ bdTl.to(".wrapper .bd-cards",{
 var footerTl = gsap.timeline({
     scrollTrigger: {
         scroller: ".main",
-        trigger: "#main-footer",
+        trigger: ".main-footer",
         start: "top 80%",
         end: "top -100%",
         scrub: 1,
