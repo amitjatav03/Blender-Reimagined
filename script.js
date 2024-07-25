@@ -154,6 +154,9 @@ tl.to(".loader-r-text", {
 let crsr = document.querySelector(".cursor");
 let glowingCrsr = document.querySelector(".glowing-crsr");
 let landingBg = document.querySelector(".ecosystem-section");
+let landingPage = document.querySelector(".landing-page");
+let ecoPage = document.querySelector(".ecosystem-section");
+let footer = document.querySelector(".main-footer");
 
 window.addEventListener("mousemove", dets => {
     gsap.to(crsr, {
@@ -169,16 +172,35 @@ window.addEventListener("mousemove", dets => {
     })
 })
 
-landingBg.addEventListener("mousemove", function(){
+landingPage.addEventListener("mousemove", function(){
     // glowingCrsr.style.opacity = 1;
-    crsr.style.opacity = 0;
-})
-landingBg.addEventListener("mouseout", function(){
-    // glowingCrsr.style.opacity = 0;
     crsr.style.opacity = 1;
+    glowingCrsr.style.opacity = 0;
+})
+landingPage.addEventListener("mouseout", function(){
+    // glowingCrsr.style.opacity = 0;
+    crsr.style.opacity = 0;
+    glowingCrsr.style.opacity = 1;
 })
 
+footer.addEventListener("mousemove", function(){
+    // glowingCrsr.style.opacity = 1;
+    crsr.style.opacity = 1;
+    glowingCrsr.style.opacity = 0;
+})
+footer.addEventListener("mouseout", function(){
+    // glowingCrsr.style.opacity = 0;
+    crsr.style.opacity = 0;
+    glowingCrsr.style.opacity = 1;
+})
 
+ecoPage.addEventListener("mousemove", function(){
+    glowingCrsr.style.background = "rgba(255, 255, 255, 0.59)";
+})
+
+ecoPage.addEventListener("mouseout", function(){
+    glowingCrsr.style.background = "#2d9a82bc";
+})
 
 let navMenu = document.querySelector(".nav-menu");
 let navOpen = document.querySelector(".nav-open-btn");
