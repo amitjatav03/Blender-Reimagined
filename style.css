@@ -17,6 +17,11 @@
     src: url(fonts/Antique-Olive-Std-Black_3861.ttf);
 }
 
+
+@font-face {
+    font-family: matterr;
+    src: url(fonts/Matter-Regular.woff);
+}
 @font-face {
     font-family: matter;
     /* src: url(fonts/Matter-Regular.woff); */
